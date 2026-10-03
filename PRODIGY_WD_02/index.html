@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chrono | Stopwatch</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <a href="#" class="brand">
+                <span class="brand-icon">◷</span>
+                Chrono
+            </a>
+
+            <span class="task-label">
+                PRODIGY WD 02
+            </span>
+
+        </header>
+
+
+        <!-- Main Stopwatch Section -->
+        <section class="hero">
+
+            <!-- Introduction -->
+            <div class="intro">
+
+                <p class="eyebrow">
+                    STOPWATCH WEB APPLICATION
+                </p>
+
+                <h1>
+                    Track every
+                    <br>
+                    <span>second.</span>
+                </h1>
+
+                <p class="description">
+                    A simple and accurate stopwatch to measure
+                    elapsed time, record laps, and keep track
+                    of your best moments.
+                </p>
+
+            </div>
+
+
+            <!-- Stopwatch -->
+            <div class="stopwatch-card">
+
+                <div class="status" id="status">
+
+                    <span class="status-dot"></span>
+
+                    Ready
+
+                </div>
+
+
+                <!-- Time Display -->
+                <div class="time" id="display">
+                    00:00:00.00
+                </div>
+
+
+                <!-- Time Labels -->
+                <div class="time-labels">
+
+                    <span>MIN</span>
+                    <span>SEC</span>
+                    <span>MS</span>
+
+                </div>
+
+
+                <!-- Controls -->
+                <div class="controls">
+
+                    <button
+                        class="control-btn secondary"
+                        id="resetBtn">
+
+                        Reset
+
+                    </button>
+
+
+                    <button
+                        class="control-btn primary"
+                        id="startBtn">
+
+                        Start
+
+                    </button>
+
+
+                    <button
+                        class="control-btn secondary"
+                        id="lapBtn"
+                        disabled>
+
+                        Lap
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Lap Section -->
+        <section class="laps-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="eyebrow">
+                        LAP RECORDS
+                    </p>
+
+                    <h2>
+                        Your laps
+                    </h2>
+
+                </div>
+
+
+                <button
+                    class="clear-btn"
+                    id="clearBtn"
+                    disabled>
+
+                    Clear All
+
+                </button>
+
+            </div>
+
+
+            <!-- Lap Card -->
+            <div class="laps-card">
+
+                <!-- Table Header -->
+                <div class="laps-header">
+
+                    <span>Lap</span>
+
+                    <span>Lap Time</span>
+
+                    <span>Total Time</span>
+
+                </div>
+
+
+                <!-- Lap List -->
+                <div
+                    id="lapsList"
+                    class="laps-list">
+
+                    <div
+                        class="empty-state"
+                        id="emptyState">
+
+                        <div class="empty-icon">
+                            ⌚
+                        </div>
+
+                        <h3>
+                            No laps recorded
+                        </h3>
+
+                        <p>
+                            Start the stopwatch and press
+                            Lap to record your time.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer>
+
+            <span>
+                Built with HTML • CSS • JavaScript
+            </span>
+
+            <span>
+                © 2026 Chrono
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
